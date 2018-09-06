@@ -1,4 +1,34 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 75%;
   background-color: #dadada;
-  font-size: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+}
+
+section {
+  align-items: center;
+}
+
+.preview {
+  margin: 0 auto;
+}
+
+/* Tablet screens and larger */
+@media screen and (min-width: 575px) {
+}
+
+/* Laptop screens and larger */
+@media screen and (min-width: 991px) {
 }
