@@ -7,28 +7,78 @@
 body {
   display: block;
   font-family: system-ui, sans-serif;
-  font-size: 75%;
   background-color: #dadada;
   box-sizing: border-box;
 }
 
-img {
-  width: 600px;
-  height: 400px;
+section {
+  margin: 10px auto;
+  width: 90%;
+  background-color: #dadada;
 }
 
-section {
-  align-items: center;
+h1 {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+h1.title {
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px;
 }
 
 .preview {
-  margin: 0 auto;
+  height: 375px;
+  width: 100%;
+}
+
+.baku {
+  background-image: url("/images/baku.jpg");
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.london {
+  background-image: url("/images/london.png");
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.madrid {
+  background-image: url("/images/madrid.jpg");
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.rome {
+  background-image: url("/images/rome.jpg");
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 20px;
 }
 
 /* Tablet screens and larger */
 @media screen and (min-width: 575px) {
+  .preview {
+    float: left;
+    height: 275px;
+    width: 48%;
+    margin: 1%;
+  }
 }
 
 /* Laptop screens and larger */
 @media screen and (min-width: 991px) {
+  .preview {
+    float: left;
+    height: 275px;
+    width: 23%;
+    margin: 1%;
+  }
 }
